@@ -53,7 +53,7 @@ class _GameScreenState extends State<GameScreen> {
           ),
         ),
         Text(
-          "$currentPlayer turn",
+          "$currentPlayer TURN",
           style: const TextStyle(
             color: Colors.black87,
             fontSize: 32,
@@ -159,13 +159,26 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   _restartButton() {
-    return ElevatedButton(
-        onPressed: () {
-          setState(() {
-            initializeGame();
-          });
-        },
-        child: const Text("RestartGame"));
+    return Padding(
+      padding: const EdgeInsets.only(top:20),
+        child: Container(
+        height: 40,
+        width: MediaQuery.of(context).size.height / 4,
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.black,
+          ),
+            onPressed: () {
+              setState(() {
+                initializeGame();
+              });
+            },
+            child: const Text("RestartGame", style: TextStyle(
+              fontSize: 20,
+            ),)),
+      ),
+    );
   }
 
   checkForDraw() {
