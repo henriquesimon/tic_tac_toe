@@ -1,16 +1,5 @@
 # tic_tac_toe
 
-A new Flutter project.
+Aplicativo de jogo da velha criado durante os estudos da linguagem Dart e do framework Flutter. 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tic-tac-toe app created during the study of the Dart language and the Flutter framework.
